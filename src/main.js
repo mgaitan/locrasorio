@@ -248,10 +248,41 @@ function setGuests(val) {
   updateRecipe(n)
 }
 
-guestsInput?.addEventListener('input',  () => setGuests(guestsInput.value))
-guestsSlider?.addEventListener('input', () => setGuests(guestsSlider.value))
-guestsDec?.addEventListener('click', () => setGuests(Number(guestsInput.value) - 5))
-guestsInc?.addEventListener('click', () => setGuests(Number(guestsInput.value) + 5))
+// Warning toast for ≤ 5 guests
+const recipeWarning = document.getElementById('recipe-warning')
+let warningTimer = null
+function checkLocroWarning(n) {
+  if (n <= 5) {
+    recipeWarning.classList.remove('hidden')
+    clearTimeout(warningTimer)
+    warningTimer = setTimeout(() => {
+      recipeWarning.classList.add('hidden')
+      setGuests(10)
+    }, 4000)
+  } else {
+    recipeWarning.classList.add('hidden')
+    clearTimeout(warningTimer)
+  }
+}
+
+guestsInput?.addEventListener('input',  () => { setGuests(guestsInput.value); checkLocroWarning(Number(guestsInput.value)) })
+guestsSlider?.addEventListener('input', () => { setGuests(guestsSlider.value); checkLocroWarning(Number(guestsSlider.value)) })
+guestsDec?.addEventListener('click', () => { const n = Number(guestsInput.value) - 5; setGuests(n); checkLocroWarning(n) })
+guestsInc?.addEventListener('click', () => { const n = Number(guestsInput.value) + 5; setGuests(n); checkLocroWarning(n) })
 
 // initialize at 50
 updateRecipe(50)
+
+// ── Add to calendar link ──
+const calLink = document.getElementById('cal-link')
+if (calLink) {
+  // Google Calendar: 2026-05-23 12:00–18:00 ART (UTC-3) = 15:00–21:00 UTC
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text:   'El Locrasorio 🍲 — Nati & Martín',
+    dates:  '20260523T150000Z/20260523T210000Z',
+    details: 'Un locraso y un casorio en el mismo evento. Sin protocolo, con mucho amor y muchos amigos.\n\nhttps://locrasorio.lat',
+    location: 'El Casco, Garabato, Alta Gracia, Córdoba, Argentina',
+  })
+  calLink.href = `https://calendar.google.com/calendar/render?${params}`
+}

@@ -147,6 +147,17 @@
   @apply inline-flex items-center gap-2 bg-brown-dark text-amber-warm px-4 py-2 rounded-full text-sm font-bold tracking-wide;
 }
 
+/* ── Recipe warning ── */
+#recipe-warning {
+  @apply mt-4 bg-rust/10 border border-rust/30 rounded-xl px-5 py-4
+         font-body text-sm text-rust text-center leading-snug;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* ── RSVP Form ── */
 .rsvp-card {
   background: linear-gradient(135deg, rgba(253,246,227,0.95) 0%, rgba(245,232,200,0.9) 100%);
