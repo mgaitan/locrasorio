@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Lato', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-cream text-brown;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-script {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+/* ── Watercolor blobs ── */
+@keyframes morph {
+  0%   { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+  33%  { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  66%  { border-radius: 50% 60% 40% 60% / 30% 70% 30% 60%; }
+  100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+}
+
+@keyframes drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(20px, -15px) scale(1.05); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.blob {
+  position: absolute;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  filter: blur(55px);
+  animation: morph 12s ease-in-out infinite, drift 18s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.blob-amber {
+  background: radial-gradient(ellipse at 40% 40%, rgba(232, 168, 56, 0.75), rgba(232, 168, 56, 0));
+}
+.blob-rust {
+  background: radial-gradient(ellipse at 60% 40%, rgba(196, 97, 42, 0.65), rgba(196, 97, 42, 0));
+  animation-delay: -4s;
+}
+.blob-sage {
+  background: radial-gradient(ellipse at 50% 60%, rgba(95, 122, 74, 0.5), rgba(95, 122, 74, 0));
+  animation-delay: -8s;
+}
+.blob-mauve {
+  background: radial-gradient(ellipse at 40% 50%, rgba(156, 123, 106, 0.55), rgba(156, 123, 106, 0));
+  animation-delay: -6s;
+}
+.blob-cream {
+  background: radial-gradient(ellipse at 50% 50%, rgba(253, 246, 227, 0.9), rgba(253, 246, 227, 0));
+}
+
+/* ── Nav ── */
+#navbar {
+  transition: background 0.3s, box-shadow 0.3s;
+}
+#navbar.scrolled {
+  @apply bg-cream/95 shadow-md;
+}
+
+/* ── Sections ── */
+.section-title {
+  @apply font-display text-4xl md:text-5xl text-brown-dark mb-3;
+}
+.section-subtitle {
+  @apply font-script text-2xl text-rust mb-10;
+}
+
+/* ── Gallery grid ── */
+.gallery-placeholder {
+  @apply bg-amber/20 rounded-2xl overflow-hidden aspect-square flex items-center justify-center;
+  border: 2px dashed rgba(196, 97, 42, 0.3);
+}
+
+/* ── FAQ accordion ── */
+.faq-item details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.faq-item details > summary::-webkit-details-marker { display: none; }
+.faq-item details[open] .faq-icon { transform: rotate(45deg); }
+.faq-icon { transition: transform 0.25s ease; }
+
+/* ── Recipe card ── */
+.recipe-card {
+  background: linear-gradient(135deg, rgba(245, 232, 200, 0.9) 0%, rgba(253, 246, 227, 0.95) 100%);
+  border: 1px solid rgba(196, 97, 42, 0.2);
+}
+
+/* ── Btn ── */
+.btn-primary {
+  @apply inline-block px-8 py-3 rounded-full font-body font-bold text-cream bg-rust
+         hover:bg-brown transition-colors duration-200 shadow-lg hover:shadow-xl;
+}
+.btn-outline {
+  @apply inline-block px-8 py-3 rounded-full font-body font-bold text-rust border-2 border-rust
+         hover:bg-rust hover:text-cream transition-colors duration-200;
+}
+
+/* ── Section divider ── */
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+}
+
+/* ── Responsive nav menu ── */
+#mobile-menu {
+  transition: max-height 0.35s ease, opacity 0.35s ease;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+#mobile-menu.open {
+  max-height: 400px;
+  opacity: 1;
+}
+
+/* ── Lodge cards ── */
+.lodge-card {
+  @apply bg-white/60 backdrop-blur-sm rounded-2xl p-5 shadow-sm border border-amber/20
+         hover:shadow-md transition-shadow duration-200;
+}
+
+/* ── Commitment section ── */
+.match-badge {
+  @apply inline-flex items-center gap-2 bg-brown-dark text-amber-warm px-4 py-2 rounded-full text-sm font-bold tracking-wide;
+}
+
+/* ── RSVP Form ── */
+.rsvp-card {
+  background: linear-gradient(135deg, rgba(253,246,227,0.95) 0%, rgba(245,232,200,0.9) 100%);
+  border: 1px solid rgba(196, 97, 42, 0.2);
+  box-shadow: 0 4px 24px rgba(120, 53, 15, 0.08);
+}
+.rsvp-label {
+  @apply block font-body text-sm font-semibold text-brown-dark mb-1.5;
+}
+.rsvp-input {
+  @apply w-full font-body text-sm text-brown bg-white/70 border border-amber/30
+         rounded-xl px-4 py-3 placeholder-mauve/50
+         focus:outline-none focus:ring-2 focus:ring-rust/30 focus:border-rust/50
+         transition-colors duration-150;
+}
+
+/* ── Lightbox ── */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.93);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+#lightbox.open {
+  display: flex;
+}
+#lightbox-img {
+  max-width: min(90vw, 1200px);
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  user-select: none;
+}
+#lightbox-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+  z-index: 1;
+}
+#lightbox-close:hover { opacity: 1; }
+#lightbox-prev,
+#lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  line-height: 1;
+  color: white;
+  background: rgba(255,255,255,0.08);
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  opacity: 0.7;
+  transition: opacity 0.15s, background 0.15s;
+  z-index: 1;
+}
+#lightbox-prev { left: 0.75rem; }
+#lightbox-next { right: 0.75rem; }
+#lightbox-prev:hover,
+#lightbox-next:hover { opacity: 1; background: rgba(255,255,255,0.15); }
+#lightbox-counter {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.5);
+  font-size: 0.8rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

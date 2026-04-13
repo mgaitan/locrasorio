@@ -1,0 +1,1944 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            El Locrasorio · Nati & Martín · Sábado 23 de Mayo 2026 · 12hs. ·
+            Alta Gracia
+        </title>
+        <meta
+            name="description"
+            content="Un gran locro y un par de firmas para celebrar nuestros 18 años juntos. Sin protocolo, con mucho amor, buena comida y seres queridos."
+        />
+        <!-- Open Graph / social sharing -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://locrasorio.pages.dev" />
+        <meta
+            property="og:title"
+            content="El Locrasorio · Nati & Martín · 23 de Mayo 2026 · 12hs"
+        />
+        <meta
+            property="og:description"
+            content="Un gran locro y un par de firmas para celebrar nuestros 18 años juntos. Sin protocolos, con mucho amor, buena comida y seres queridos. ¡Confirmá tu asistencia!"
+        />
+        <meta
+            property="og:image"
+            content="https://locrasorio.pages.dev/images/gallery/gallery-14.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1600" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:image"
+            content="https://locrasorio.pages.dev/images/gallery/gallery-14.jpg"
+        />
+
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+        <link rel="stylesheet" href="/src/style.css" />
+    </head>
+    <body class="bg-cream">
+        <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+        <nav id="navbar" class="fixed top-0 w-full z-50 px-6 py-3">
+            <div class="max-w-6xl mx-auto flex items-center justify-between">
+                <!-- Logo -->
+                <a
+                    href="#inicio"
+                    class="font-script text-2xl text-rust hover:text-brown transition-colors"
+                >
+                    El Locrasorio
+                </a>
+
+                <!-- Desktop links -->
+                <ul
+                    class="hidden md:flex items-center gap-7 font-body text-sm text-brown font-medium"
+                >
+                    <li>
+                        <a
+                            href="#nosotros"
+                            class="hover:text-rust transition-colors"
+                            >Nosotros</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#lugar"
+                            class="hover:text-rust transition-colors"
+                            >El Lugar</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#faq" class="hover:text-rust transition-colors"
+                            >Preguntas frecuentes</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#receta"
+                            class="hover:text-rust transition-colors"
+                            >La Receta</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#compromiso"
+                            class="hover:text-rust transition-colors"
+                            >El Compromiso</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#confirmar"
+                            class="btn-primary text-sm py-2 px-5"
+                            >Confirmanos</a
+                        >
+                    </li>
+                </ul>
+
+                <!-- Mobile hamburger -->
+                <button
+                    id="menu-btn"
+                    aria-expanded="false"
+                    aria-label="Menú"
+                    class="md:hidden flex flex-col gap-1.5 p-2 text-brown"
+                >
+                    <span class="block w-6 h-0.5 bg-current"></span>
+                    <span class="block w-6 h-0.5 bg-current"></span>
+                    <span class="block w-4 h-0.5 bg-current"></span>
+                </button>
+            </div>
+
+            <!-- Mobile menu -->
+            <div
+                id="mobile-menu"
+                class="md:hidden bg-cream/98 border-t border-amber/20"
+            >
+                <ul
+                    class="flex flex-col py-4 px-6 gap-4 font-body text-brown font-medium"
+                >
+                    <li>
+                        <a href="#nosotros" class="hover:text-rust">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#lugar" class="hover:text-rust">El Lugar</a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="hover:text-rust"
+                            >Preguntas frecuentes</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#receta" class="hover:text-rust">La Receta</a>
+                    </li>
+                    <li>
+                        <a href="#compromiso" class="hover:text-rust"
+                            >El Compromiso</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#confirmar" class="text-rust font-bold"
+                            >Confirmanos</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- ══════════════════════════════════════════
+       HERO / INICIO
+  ══════════════════════════════════════════ -->
+        <section
+            id="inicio"
+            class="relative min-h-screen flex items-center justify-center overflow-hidden"
+        >
+            <!-- Watercolor blobs background -->
+            <div
+                class="absolute inset-0 pointer-events-none select-none"
+                aria-hidden="true"
+            >
+                <div
+                    class="blob blob-amber w-[500px] h-[500px] top-[-80px] right-[-60px]"
+                ></div>
+                <div
+                    class="blob blob-rust w-[350px] h-[350px] top-[40%] left-[-80px]"
+                ></div>
+                <div
+                    class="blob blob-sage w-[300px] h-[300px] bottom-[-60px] right-[20%]"
+                ></div>
+                <div
+                    class="blob blob-mauve w-[250px] h-[250px] top-[60%] right-[-40px]"
+                ></div>
+                <div
+                    class="blob blob-amber w-[200px] h-[200px] bottom-[10%] left-[15%]"
+                ></div>
+            </div>
+
+            <!-- Content -->
+            <div
+                class="relative z-10 text-center px-6 max-w-3xl mx-auto pt-24 pb-16"
+            >
+                <!-- Eyebrow -->
+                <p
+                    class="font-body text-sm tracking-[0.25em] uppercase text-mauve mb-6"
+                >
+                    Sábado · 23 de Mayo · 2026 · 12hs
+                </p>
+
+                <!-- Main title -->
+                <h1
+                    class="font-display text-7xl md:text-9xl font-bold text-brown-dark leading-none mb-2"
+                >
+                    El Locrasorio
+                </h1>
+
+                <!-- Names -->
+                <p class="font-script text-4xl md:text-5xl text-rust mb-8">
+                    de Nati & Martín
+                </p>
+
+                <!-- Tagline script -->
+                <p class="font-script text-2xl md:text-2xl text-rust/70 mb-4">
+                    (¡sí! un locraso y un casorio en el mismo evento)
+                </p>
+
+                <!-- Tagline -->
+                <p
+                    class="font-body text-lg md:text-xl text-brown/80 max-w-lg mx-auto mb-10 leading-relaxed"
+                >
+                    Celebramos 18 años juntos y queremos que sean parte. Un
+                    encuentro sencillo, con poco protocolo y mucha alegría. Como
+                    nuestro amor.
+                </p>
+
+                <!-- CTA -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#confirmar" class="btn-primary"
+                        >Confirmá tu asistencia</a
+                    >
+                    <a href="#nosotros" class="btn-outline">Nuestra historia</a>
+                </div>
+
+                <!-- Countdown -->
+                <div id="countdown" class="mt-14 flex justify-center gap-8">
+                    <div class="text-center">
+                        <p
+                            class="font-display text-5xl font-bold text-rust"
+                            data-days
+                        >
+                            00
+                        </p>
+                        <p
+                            class="font-body text-xs uppercase tracking-widest text-mauve mt-1"
+                        >
+                            días
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <p
+                            class="font-display text-5xl font-bold text-rust"
+                            data-hours
+                        >
+                            00
+                        </p>
+                        <p
+                            class="font-body text-xs uppercase tracking-widest text-mauve mt-1"
+                        >
+                            horas
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <p
+                            class="font-display text-5xl font-bold text-rust"
+                            data-minutes
+                        >
+                            00
+                        </p>
+                        <p
+                            class="font-body text-xs uppercase tracking-widest text-mauve mt-1"
+                        >
+                            minutos
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll hint -->
+            <div
+                class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce opacity-50"
+            >
+                <svg
+                    class="w-6 h-6 text-rust"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                    />
+                </svg>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       NOSOTROS
+  ══════════════════════════════════════════ -->
+        <section
+            id="nosotros"
+            class="relative py-24 px-6 bg-cream-dark overflow-hidden"
+        >
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <div
+                    class="blob blob-mauve w-[300px] h-[300px] top-[-60px] left-[-40px] opacity-30"
+                ></div>
+                <div
+                    class="blob blob-amber w-[250px] h-[250px] bottom-[-40px] right-[-30px] opacity-25"
+                ></div>
+            </div>
+
+            <div class="relative z-10 max-w-5xl mx-auto">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="section-title">Nosotros</h2>
+                    <p class="section-subtitle">
+                        Una hija, una casa, casi 5 mundiales y decenas de locros
+                        compartidos
+                    </p>
+                </div>
+
+                <!-- Story blocks -->
+                <div class="grid md:grid-cols-2 gap-6 items-center mb-20">
+                    <div class="reveal">
+                        <div
+                            class="rounded-3xl shadow-lg overflow-hidden"
+                            style="aspect-ratio: 3/4; max-height: 480px"
+                        >
+                            <img
+                                src="/images/gallery/gallery-14.jpg"
+                                alt="Nati y Martín"
+                                class="w-full h-full object-cover object-top"
+                            />
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <p
+                            class="font-body text-lg text-brown/75 leading-relaxed mb-4"
+                        >
+                            Nos encontramos en septiembre de 2008. Nos
+                            buscábamos desde mucho antes. Después de casi 18
+                            años de
+                            <em>probar qué onda la convivencia</em>
+                            comprobamos que (más o menos) funciona 😉.
+                            Compartimos la vida, la crianza de una hija
+                            increíble, una casa, una huerta, 8 gallinas, una
+                            perra, un gato, muchas ideas y sueños, y —lo más
+                            importante— muchísimo amor.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ema highlight -->
+                <div
+                    class="reveal bg-amber/10 border border-amber/25 rounded-3xl overflow-hidden max-w-2xl mx-auto mb-20"
+                >
+                    <div class="md:flex items-center">
+                        <div
+                            class="p-8 pb-4 md:p-10 text-center md:text-left md:order-1 order-1"
+                        >
+                            <p class="font-script text-5xl text-rust mb-3">
+                                Ema
+                            </p>
+                            <p class="font-body text-brown/75 leading-relaxed">
+                                Nuestra hija cumplirá 11 años en julio y nos
+                                llena de alegría y orgullo todos los días. Es
+                                una parte fundamental de nuestra felicidad — y
+                                es probablemente la que más deseó este evento,
+                                así que también es para ella que lo hacemos.
+                            </p>
+                        </div>
+                        <div
+                            class="md:w-48 flex-shrink-0 flex md:flex-col md:order-2 order-2"
+                        >
+                            <img
+                                src="/images/ema_locro.jpeg"
+                                alt="Ema"
+                                class="w-1/2 md:w-full h-56 md:h-48 object-cover"
+                            />
+                            <img
+                                src="/images/ema_2.jpg"
+                                alt="Ema"
+                                class="w-1/2 md:w-full h-56 md:h-48 object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo gallery -->
+                <div class="reveal">
+                    <h3
+                        class="font-display text-2xl text-brown-dark text-center mb-8"
+                    >
+                        Algunas fotitos del amor a través de los años
+                    </h3>
+                    <div
+                        class="gallery-grid columns-2 sm:columns-3 md:columns-4 gap-3 space-y-3"
+                    >
+                        <img
+                            src="/images/gallery/gallery-01.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-02.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-03.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-04.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-05.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-06.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-07.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-08.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-09.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-10.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-11.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-12.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-13.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-15.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-16.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-17.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-18.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-19.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-21.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-22.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-23.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-24.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-25.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-26.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-27.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-28.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-29.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-30.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-31.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-32.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-33.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-34.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-35.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-36.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-37.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-38.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-39.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-40.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-41.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-42.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-43.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <img
+                            src="/images/gallery/gallery-44.jpg"
+                            alt=""
+                            loading="lazy"
+                            class="w-full rounded-xl object-cover hover:scale-[1.02] transition-transform duration-300"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       EL LUGAR
+  ══════════════════════════════════════════ -->
+        <section
+            id="lugar"
+            class="relative py-24 px-6 bg-cream overflow-hidden"
+        >
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <div
+                    class="blob blob-sage w-[320px] h-[320px] top-[-40px] right-[-60px] opacity-30"
+                ></div>
+                <div
+                    class="blob blob-rust w-[200px] h-[200px] bottom-[10%] left-[-30px] opacity-20"
+                ></div>
+            </div>
+
+            <div class="relative z-10 max-w-5xl mx-auto">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="section-title">El Lugar</h2>
+                    <p class="section-subtitle">Garabato · Alta Gracia</p>
+                    <p class="font-body text-brown/70 max-w-xl mx-auto">
+                        El evento será en
+                        <strong class="text-brown-dark">El Casco</strong>,
+                        dentro del predio Garabato en Alta Gracia, Córdoba.
+                    </p>
+                </div>
+
+                <!-- Venue photos -->
+                <div class="reveal mb-3">
+                    <div
+                        class="rounded-2xl overflow-hidden"
+                        style="height: 340px"
+                    >
+                        <img
+                            src="/images/lugar-01.jpg"
+                            alt="El Casco Eventos"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+                    <p
+                        class="text-center font-body text-sm text-mauve/70 italic mt-3 mb-10"
+                    >
+                        (ojo, capaz que no hay silloncitos)
+                    </p>
+                </div>
+                <!-- Map -->
+                <div
+                    class="reveal mb-16 rounded-2xl overflow-hidden shadow-md border border-amber/20 h-80"
+                >
+                    <iframe
+                        title="El Casco Eventos — Garabato, Alta Gracia"
+                        src="https://maps.google.com/maps?q=El+Casco+Eventos,+Garabato,+Alta+Gracia,+Córdoba&z=15&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border: 0"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    >
+                    </iframe>
+                </div>
+
+                <!-- Hospedaje + Transporte -->
+                <div class="reveal grid md:grid-cols-2 gap-10">
+                    <!-- Hospedaje -->
+                    <div>
+                        <h3 class="font-display text-2xl text-brown-dark mb-2">
+                            Hospedaje
+                        </h3>
+                        <p class="font-body text-brown/70 text-sm mb-6">
+                            Pueden buscar por Anisacate, Valle de Anisacate, La
+                            Bolsa o Alta Gracia. Todo queda más o menos cerca.
+                            Recomendamos reservar con anticipación.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="lodge-card">
+                                <p
+                                    class="font-semibold font-body text-brown-dark"
+                                >
+                                    Hoteles
+                                </p>
+                                <p class="text-sm text-mauve font-body">
+                                    Mejor en el centro de Alta Gracia · ~10 min
+                                    del predio en auto.
+                                </p>
+                                <p class="text-sm text-brown/70 font-body mt-1">
+                                    Buscar en
+                                    <a
+                                        href="https://www.booking.com/city/ar/alta-gracia.es.html"
+                                        >Booking.com</a
+                                    >
+                                    / Airbnb para la fecha
+                                </p>
+                            </div>
+                            <div class="lodge-card">
+                                <p
+                                    class="font-semibold font-body text-brown-dark"
+                                >
+                                    Cabañas
+                                </p>
+                                <p class="text-sm text-mauve font-body">
+                                    Varias opciones en los pueblos de la zona, y
+                                    en esa fecha es temporada baja. Ideal para
+                                    familias y grupos.
+                                </p>
+                            </div>
+                            <div class="lodge-card">
+                                <p
+                                    class="font-semibold font-body text-brown-dark"
+                                >
+                                    ¿Y carpa? ¡Por qué no!
+                                </p>
+                                <p class="text-sm text-mauve font-body">
+                                    Hay lugar en nuestro patio y podemos prestar
+                                    frazadas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transporte -->
+                    <div>
+                        <h3 class="font-display text-2xl text-brown-dark mb-2">
+                            Cómo llegar
+                        </h3>
+                        <p class="font-body text-brown/70 text-sm mb-6">
+                            Garabato queda a las afueras de Alta Gracia,
+                            Córdoba. — muy accesible desde la ciudad.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="lodge-card">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-2xl mt-0.5">🚗</span>
+                                    <div>
+                                        <p
+                                            class="font-semibold font-body text-brown-dark"
+                                        >
+                                            En auto
+                                        </p>
+                                        <p
+                                            class="text-sm text-brown/70 font-body"
+                                        >
+                                            Desde Córdoba capital: ~35 min por
+                                            Ruta 5 o Ruta 36<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lodge-card">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-2xl mt-0.5">🛻</span>
+                                    <div>
+                                        <p
+                                            class="font-semibold font-body text-brown-dark"
+                                        >
+                                            Uber / Cabify / Remís
+                                        </p>
+                                        <p
+                                            class="text-sm text-brown/70 font-body"
+                                        >
+                                            Estos servicios funcionan en
+                                            Anisacate/Alta Gracia y desde
+                                            Córdoba capital.<br />
+                                            Coordiná el regreso con
+                                            anticipación.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lodge-card">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-2xl mt-0.5">🚌</span>
+                                    <div>
+                                        <p
+                                            class="font-semibold font-body text-brown-dark"
+                                        >
+                                            Ómnibus
+                                        </p>
+                                        <p
+                                            class="text-sm text-brown/70 font-body"
+                                        >
+                                            Hay servicios frecuentes desde
+                                            Córdoba a Alta Gracia. Consultá en
+                                            la Terminal de Córdoba.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════════ -->
+        <section
+            id="faq"
+            class="relative py-24 px-6 bg-cream-dark overflow-hidden"
+        >
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <div
+                    class="blob blob-amber w-[260px] h-[260px] top-[-30px] left-[30%] opacity-25"
+                ></div>
+            </div>
+
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <div class="text-center mb-14 reveal">
+                    <h2 class="section-title">Preguntas frecuentes</h2>
+                    <p class="section-subtitle">Todo lo que necesitás saber</p>
+                </div>
+
+                <div class="space-y-4 reveal faq-item">
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20 group"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >¿Qué ropa llevar?</span
+                            >
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            Cada uno se viste como quiere: es un locro entre
+                            gente querida, no la Met Gala pero si gustan de la
+                            elegancia nadie los discriminará. Sin embargo, el
+                            lugar es semicubierto así que dependemos un poco del
+                            clima otoñal de mayo. Recomendamos ropa cómoda y
+                            algo de abrigo no estará de más. Si el sol acompaña
+                            podemos estar afuera. Zapatillas o calzado cómodo si
+                            vas a querer bailotear.
+                        </div>
+                    </details>
+
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >¿Hacemos regalo?</span
+                            >
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            <strong class="text-brown-dark"
+                                >No necesitamos ni esperamos ningún
+                                regalo</strong
+                            >, de verdad. Si querés y podés colaborar con los
+                            gastos del evento (<em>it's a trap!</em>), sugerimos
+                            un aporte de $20.000 por persona — pero es
+                            completamente voluntario y no un requisito; lo
+                            importante es que puedan venir. Sabemos que muchos
+                            vendrán de lejos y ya tendrán otros gastos
+                            importantes, así que no se sientan en el compromiso.
+                            <br /><br />Si insisten, el alias para tranferirnos
+                            es <strong>martingaitan.bru</strong>.
+                        </div>
+                    </details>
+
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >¿Hay que llevar algo?</span
+                            >
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            <p>
+                                Les amigues de la zona ya saben cómo hacemos los
+                                eventos por acá: reposera en el baúl por las
+                                dudas, equipo de mate para la tardecita (la mesa
+                                dulce la ponemos acá!) e, infaltable, tu
+                                instrumento si sabés tocar algo.
+                            </p>
+                            <p>
+                                También, por las dudas, podés traer tu tupper
+                                para llevarte un souvernir de locro, pero la
+                                verdad es que seremos muchos así que tal vez se
+                                llene en el del 9 de julio.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >¿Habrá opciones vegetarianas?</span
+                            >
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            Sí. El locro tradicional lleva carne, pero vamos a
+                            tener también una versión vegetariana bien completa.
+                            Si tenés alguna otra restricción o preferencia
+                            alimentaria avisanos cuando confirmes y lo
+                            organizamos o podés traerte tus alimentos sin
+                            problema.
+                        </div>
+                    </details>
+
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >¿Se puede ir con niñes?</span
+                            >
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            ¡Claro! El locrasorio es un festejo con todos
+                            nuestros seres queridos. Hay espacio seguro para
+                            chivatear y explorar, placita con juegos, cancha de
+                            fútbol y quizas contratamos algún juego inflable.
+                            Ema va a estar feliz de tener compañía.
+                        </div>
+                    </details>
+
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >¿Hasta cuándo podemos confirmar?</span
+                            >
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            Idealmente antes del
+                            <strong class="text-brown-dark">25 de abril</strong
+                            >, por favor. Necesitamos los números para calcular
+                            bebidas, cuánto locro cocinar y acordarnos de dónde
+                            te conocemos.
+                        </div>
+                    </details>
+
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >Che pero ¿es un casamiento "de verdad"?</span
+                            >
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            <p>
+                                ¡Sí!. Legalmente el gancho lo pondremos el día
+                                previo, el viernes 22 de mayo a las 11hs en el
+                                Registro Civil de Anisacate. Pero esta
+                                celebración es lo que nos importa más: reunir a
+                                las personas que queremos, comer juntos un plato
+                                que nos sale del corazón y celebrar lo que
+                                construimos en estos años y los que vendrán.
+                            </p>
+                            <p>
+                                Lo que no está planeado son los rituales y
+                                protocolos típicos de casamientos enlatados
+                                (valses, ramos, fotógrafos, vestidos especiales,
+                                powerpoints y caretajes).
+                            </p>
+                        </div>
+                    </details>
+
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >Y ¿habrá joda?
+                            </span>
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            Habrá sonidista y tenemos muchos amigues que seguro
+                            van a tocar algo para amenizar. Después podemos
+                            correr las sillas y las viejas y nos bailamos unos
+                            cuartetos.
+                        </div>
+                    </details>
+
+                    <details
+                        class="bg-white/70 backdrop-blur-sm rounded-2xl border border-amber/20"
+                    >
+                        <summary
+                            class="flex items-center justify-between p-6 gap-4"
+                        >
+                            <span class="font-display text-lg text-brown-dark"
+                                >¿Hasta qué hora le calculamos?
+                            </span>
+                            <span class="faq-icon text-rust flex-shrink-0">
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 4v16m8-8H4"
+                                    />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div
+                            class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
+                        >
+                            Tenemos el predio hasta que caiga el sol, tipo 19hs
+                            (flexible) pero si hay quorum podemos seguir por
+                            otro lado.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       CONFIRMANOS
+  ══════════════════════════════════════════ -->
+        <section
+            id="confirmar"
+            class="relative py-24 px-6 bg-cream overflow-hidden"
+        >
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <div
+                    class="blob blob-rust w-[280px] h-[280px] top-[-50px] right-[-40px] opacity-30"
+                ></div>
+                <div
+                    class="blob blob-amber w-[220px] h-[220px] bottom-[-30px] left-[-30px] opacity-25"
+                ></div>
+            </div>
+
+            <div class="relative z-10 max-w-xl mx-auto">
+                <div class="text-center mb-10 reveal">
+                    <h2 class="section-title">Confirmanos</h2>
+                    <p class="section-subtitle">Antes del 25 de abril</p>
+                    <p class="font-body text-brown/70 leading-relaxed">
+                        Completá el formulario para que sepamos que contamos con
+                        vos y tu gente. Cuanto antes mejor ¡que hay que poner a
+                        remojar porotos!
+                    </p>
+                </div>
+
+                <!-- RSVP Form -->
+                <form
+                    id="rsvp-form"
+                    class="reveal rsvp-card rounded-3xl p-8 space-y-5"
+                    novalidate
+                >
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <div class="sm:col-span-2">
+                            <label class="rsvp-label" for="rsvp-nombre"
+                                >Nombre y apellido
+                                <span class="text-rust">*</span></label
+                            >
+                            <input
+                                id="rsvp-nombre"
+                                name="nombre"
+                                type="text"
+                                required
+                                autocomplete="name"
+                                class="rsvp-input"
+                                placeholder="Tu nombre completo"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="rsvp-label" for="rsvp-adultos"
+                                >Adultos <span class="text-rust">*</span></label
+                            >
+                            <input
+                                id="rsvp-adultos"
+                                name="adultos"
+                                type="number"
+                                min="1"
+                                max="20"
+                                required
+                                class="rsvp-input"
+                                placeholder="1"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="rsvp-label" for="rsvp-ninos"
+                                >Niños/as</label
+                            >
+                            <input
+                                id="rsvp-ninos"
+                                name="ninos"
+                                type="number"
+                                min="0"
+                                max="20"
+                                class="rsvp-input"
+                                placeholder="0"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="rsvp-label" for="rsvp-telefono"
+                                >Teléfono</label
+                            >
+                            <input
+                                id="rsvp-telefono"
+                                name="telefono"
+                                type="tel"
+                                autocomplete="tel"
+                                class="rsvp-input"
+                                placeholder="+54 9 11 …"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="rsvp-label" for="rsvp-email"
+                                >Email (opcional)</label
+                            >
+                            <input
+                                id="rsvp-email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                class="rsvp-input"
+                                placeholder="para avisarte novedades"
+                            />
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <label class="rsvp-label" for="rsvp-restricciones"
+                                >Restricciones/Preferencias alimentarias</label
+                            >
+                            <input
+                                id="rsvp-restricciones"
+                                name="restricciones"
+                                type="text"
+                                class="rsvp-input"
+                                placeholder="vegetariano, celiaco, alérgico a…"
+                            />
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <label class="rsvp-label" for="rsvp-mensaje"
+                                >Mensaje (opcional)</label
+                            >
+                            <textarea
+                                id="rsvp-mensaje"
+                                name="mensaje"
+                                rows="3"
+                                class="rsvp-input resize-none"
+                                placeholder="¿Algo que quieras contarnos?"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div
+                        id="rsvp-error"
+                        class="hidden text-sm text-rust font-body font-semibold text-center py-2"
+                    ></div>
+
+                    <button
+                        type="submit"
+                        id="rsvp-submit"
+                        class="btn-primary w-full text-base py-4"
+                    >
+                        Confirmar asistencia
+                    </button>
+                </form>
+
+                <!-- Success state -->
+                <div
+                    id="rsvp-success"
+                    class="hidden text-center rsvp-card rounded-3xl p-10"
+                >
+                    <p class="font-script text-5xl text-rust mb-4">
+                        ¡Los esperamos!
+                    </p>
+                    <p class="font-body text-brown/75 leading-relaxed mb-6">
+                        Gracias por confirmar. Anotamos tu reserva y nos vemos
+                        el
+                        <strong class="text-brown-dark">23 de mayo!</strong>.
+                    </p>
+                    <div
+                        class="bg-amber/15 border border-amber/30 rounded-2xl p-5 text-left mb-6"
+                    >
+                        <p
+                            class="font-body text-sm text-brown/75 leading-relaxed"
+                        >
+                            Si querés y podés hacer un aporte voluntario para el
+                            evento, podés transferir al alias
+                            <strong
+                                class="text-brown-dark font-mono tracking-wide"
+                                >martingaitan.bru</strong
+                            >
+                            . El monto sugerido es
+                            <strong class="text-rust"
+                                >$20.000 por persona</strong
+                            >, pero cualquier colaboración es bienvenida.
+                            ¡Gracias!
+                        </p>
+                    </div>
+                    <p class="font-script text-3xl text-amber-warm">
+                        Nati & Martín
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       LA RECETA
+  ══════════════════════════════════════════ -->
+        <section
+            id="receta"
+            class="relative py-24 px-6 bg-cream-dark overflow-hidden"
+        >
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <div
+                    class="blob blob-sage w-[300px] h-[300px] bottom-[-50px] right-[10%] opacity-25"
+                ></div>
+                <div
+                    class="blob blob-mauve w-[200px] h-[200px] top-[20%] left-[-40px] opacity-20"
+                ></div>
+            </div>
+
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <div class="text-center mb-14 reveal">
+                    <h2 class="section-title">Nuestra Receta</h2>
+                    <p class="section-subtitle">El locro de Nati y Martín</p>
+                </div>
+
+                <!-- Story -->
+                <div
+                    class="reveal bg-white/60 backdrop-blur-sm rounded-3xl overflow-hidden mb-10 border border-amber/20"
+                >
+                    <div class="md:flex">
+                        <div class="md:w-72 flex-shrink-0">
+                            <img
+                                src="/images/locro.webp"
+                                alt="El locro"
+                                class="w-full h-56 md:h-full object-cover"
+                            />
+                        </div>
+                        <div class="p-8">
+                            <h3
+                                class="font-display text-xl text-brown-dark mb-4"
+                            >
+                                Una tradición de muchos años
+                            </h3>
+                            <p
+                                class="font-body text-brown/75 leading-relaxed mb-4"
+                            >
+                                Todos los años durante algún fin de semana de
+                                mayo hacemos un gran locro con amigues en
+                                nuestra casa. Lo empezamos a hacer cuando
+                                vivíamos en Córdoba y se fue convirtiendo en un
+                                ritual que ya muchas personas esperas y hemos
+                                llegado a ser más de 40 comensales.
+                            </p>
+
+                            <p
+                                class="font-body text-brown/75 leading-relaxed mb-4"
+                            >
+                                No se trata sólo la comida: es una pequeña
+                                "peña" de patio y galería. La olla, el fuego
+                                lento, el olor que llena la casa, los amigos que
+                                van cayendo de a poco, el primer descorche, las
+                                risas, los aplausos. Es, sin dudas, un momento
+                                muy especial de nuestro calendario.
+                            </p>
+                            <p class="font-body text-brown/75 leading-relaxed">
+                                Esta vez lo ampliaremos más que nunca: más
+                                personas, más locro, y una razón extra para
+                                celebrar. La receta es la misma de siempre y acá
+                                se la dejamos...aunque, como dice La 12,
+                                <em
+                                    >"podrán imitarnos, pero igualarnos
+                                    jamás"</em
+                                >.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guest count control -->
+                <div
+                    class="reveal mb-8 bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-amber/20 text-center"
+                >
+                    <label
+                        class="font-display text-lg text-brown-dark block mb-4"
+                    >
+                        ¿Para cuántas personas vas a cocinar?
+                    </label>
+                    <div
+                        class="flex items-center justify-center gap-4 flex-wrap"
+                    >
+                        <button
+                            id="guests-dec"
+                            aria-label="Restar"
+                            class="w-10 h-10 rounded-full border-2 border-rust text-rust font-bold text-xl hover:bg-rust hover:text-cream transition-colors"
+                        >
+                            −
+                        </button>
+                        <input
+                            id="guests-input"
+                            type="number"
+                            min="5"
+                            max="500"
+                            value="50"
+                            class="w-24 text-center font-display text-3xl text-rust bg-transparent border-b-2 border-rust focus:outline-none"
+                        />
+                        <button
+                            id="guests-inc"
+                            aria-label="Sumar"
+                            class="w-10 h-10 rounded-full border-2 border-rust text-rust font-bold text-xl hover:bg-rust hover:text-cream transition-colors"
+                        >
+                            +
+                        </button>
+                    </div>
+                    <input
+                        id="guests-slider"
+                        type="range"
+                        min="5"
+                        max="500"
+                        value="50"
+                        class="w-full max-w-xs mt-4 accent-rust"
+                    />
+                    <p class="font-body text-xs text-mauve mt-2">
+                        Las cantidades se actualizan automáticamente
+                    </p>
+                </div>
+
+                <!-- Recipe card -->
+                <div
+                    class="reveal recipe-card rounded-3xl p-8 md:p-10 shadow-lg"
+                >
+                    <div class="text-center mb-8">
+                        <p class="font-script text-4xl text-rust mb-1">
+                            El locro de Nati y Martín
+                        </p>
+                        <p class="font-body text-sm text-mauve">
+                            Para <span id="recipe-guests">50</span> personas ·
+                            ~4 horas de cocción
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <!-- Ingredients -->
+                        <div>
+                            <h4
+                                class="font-display text-xl text-brown-dark mb-4 pb-2 border-b border-amber/30"
+                            >
+                                Ingredientes
+                            </h4>
+
+                            <p
+                                class="font-body text-sm font-semibold text-rust uppercase tracking-wide mb-2"
+                            >
+                                La noche anterior (remojar)
+                            </p>
+                            <ul
+                                class="font-body text-sm text-brown/75 space-y-1 mb-5"
+                            >
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="40">2 kg</span> maíz
+                                    blanco partido
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="35">1.8 kg</span> porotos
+                                    alubia y pallares.
+                                </li>
+                            </ul>
+
+                            <p
+                                class="font-body text-sm font-semibold text-rust uppercase tracking-wide mb-2"
+                            >
+                                Las carnes
+                            </p>
+                            <ul
+                                class="font-body text-sm text-brown/75 space-y-1 mb-5"
+                            >
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="30">1.5 kg</span> falda
+                                    y/o rosbif
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="40">2 kg</span> pulpa de
+                                    cerdo
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="4">200 g</span> panceta
+                                    ahumada
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span
+                                        data-per-g="25"
+                                        data-unit="chorizo"
+                                        data-unit-g="100"
+                                        >13 chorizos</span
+                                    >
+                                    (colorados + criollos)
+                                </li>
+                            </ul>
+
+                            <p
+                                class="font-body text-sm font-semibold text-rust uppercase tracking-wide mb-2"
+                            >
+                                Verduras
+                            </p>
+                            <ul
+                                class="font-body text-sm text-brown/75 space-y-1 mb-5"
+                            >
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="95">4.8 kg</span> zapallo
+                                    plomo o similar
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="20">1 kg</span> repollo
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="5">250 g</span> cebolla
+                                </li>
+                            </ul>
+
+                            <p
+                                class="font-body text-sm font-semibold text-rust uppercase tracking-wide mb-2"
+                            >
+                                La salsita picante
+                            </p>
+                            <ul
+                                class="font-body text-sm text-brown/75 space-y-1"
+                            >
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="10">500 g</span> cebolla
+                                    de verdeo
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="3">150 g</span> ají molido
+                                    (picante a gusto)
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-g="3">150 g</span> pimentón
+                                    ahumado
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="text-amber-warm">·</span>
+                                    <span data-per-l="0.02">1 L</span> aceite de
+                                    maíz
+                                </li>
+                            </ul>
+
+                            <div class="mt-5 pt-4 border-t border-amber/20">
+                                <p class="font-body text-xs text-mauve">
+                                    Agua aprox.:
+                                    <span data-per-l="0.3">15 L</span> · Volumen
+                                    total olla:
+                                    <span data-per-l="0.6">30 L</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Steps -->
+                        <div>
+                            <h4
+                                class="font-display text-xl text-brown-dark mb-4 pb-2 border-b border-amber/30"
+                            >
+                                Preparación
+                            </h4>
+                            <ol
+                                class="font-body text-sm text-brown/75 space-y-4"
+                            >
+                                <li class="flex gap-3">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-rust text-cream flex items-center justify-center text-xs font-bold"
+                                        >1</span
+                                    >
+                                    <p>
+                                        <strong class="text-brown-dark"
+                                            >La noche anterior:</strong
+                                        >
+                                        poner a remojar el maíz y los porotos
+                                        por separado, cubiertos de agua fría.
+                                    </p>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-rust text-cream flex items-center justify-center text-xs font-bold"
+                                        >2</span
+                                    >
+                                    <p>
+                                        <strong class="text-brown-dark"
+                                            >Arrancar con el maíz:</strong
+                                        >
+                                        hervir el maíz en abundante agua a fuego
+                                        medio-alto durante 1h., hasta que
+                                        empiece a abrir.
+                                    </p>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-rust text-cream flex items-center justify-center text-xs font-bold"
+                                        >3</span
+                                    >
+                                    <p>
+                                        <strong class="text-brown-dark"
+                                            >Porotos y verduras:</strong
+                                        >
+                                        agregar los porotos escurridos, el
+                                        zapallo, el repollo y la cebolla.
+                                        Cocinar 1,5 hs. más.
+                                    </p>
+                                    <p>
+                                        Luego de de este paso es cuando
+                                        <strong
+                                            >separamos potaje para el locro
+                                            veggie</strong
+                                        >.
+                                    </p>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-rust text-cream flex items-center justify-center text-xs font-bold"
+                                        >4</span
+                                    >
+                                    <p>
+                                        <strong class="text-brown-dark"
+                                            >Sumar las carnes :</strong
+                                        >
+                                        incorporar la falda, el cerdo y la
+                                        panceta previamente rehogadas. Cocinar a
+                                        fuego lento, tapado, por 1 hora.
+                                    </p>
+                                    <p>
+                                        Y acá la polémica: no le ponemos
+                                        cueritos, ni patitas, ni carne con mucho
+                                        hueso ni nada que no pueda comerse con
+                                        una cuchara. ¿Heterodoxos? Sólo gente
+                                        con buen gusto.
+                                    </p>
+                                </li>
+
+                                <li class="flex gap-3">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-rust text-cream flex items-center justify-center text-xs font-bold"
+                                        >5</span
+                                    >
+                                    <p>
+                                        <strong class="text-brown-dark"
+                                            >Los embutidos:</strong
+                                        >
+                                        agregar los chorizos previamente asados
+                                        cortados en rodajitas, en los últimos 30
+                                        minutos para que no se deshagan.
+                                    </p>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-rust text-cream flex items-center justify-center text-xs font-bold"
+                                        >5b.</span
+                                    >
+                                    <p>
+                                        <strong class="text-brown-dark"
+                                            >Para el vegetariano :</strong
+                                        >
+                                        Hay que darle algo más de sabor y
+                                        textura. Al potaje "base" le sumamos un
+                                        mix de verduras en cubitos horneadas
+                                        (batata, zanahoria, zuchini, berenjena,
+                                        lo que
+                                        <em>haiga</em>) y a veces hongos y un
+                                        toque de curry.
+                                    </p>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-rust text-cream flex items-center justify-center text-xs font-bold"
+                                        >6</span
+                                    >
+                                    <p>
+                                        <strong class="text-brown-dark"
+                                            >La salsita:</strong
+                                        >
+                                        en una sartén aparte, rehogar cebolla de
+                                        verdeo con aceite, ají molido de picor a
+                                        gusto y pimentón hasta que coloree.
+                                        Servir encima de cada plato.
+                                    </p>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-sage text-cream flex items-center justify-center text-xs font-bold"
+                                        >★</span
+                                    >
+                                    <p>
+                                        <strong class="text-brown-dark"
+                                            >El secreto:</strong
+                                        >
+                                        paciencia, la garganta hidratada y
+                                        amigues.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       EL COMPROMISO
+  ══════════════════════════════════════════ -->
+        <section
+            id="compromiso"
+            class="relative py-24 px-6 bg-brown-dark overflow-hidden"
+        >
+            <!-- Background: argentina_qatar photo with dark overlay -->
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <img
+                    src="/images/argentina_qatar.jpg"
+                    alt=""
+                    class="absolute inset-0 w-full h-full object-cover opacity-20"
+                />
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-brown-dark/60 via-brown-dark/40 to-brown-dark/80"
+                ></div>
+                <div
+                    class="blob blob-amber w-[400px] h-[400px] top-[-80px] left-[-60px] opacity-15"
+                ></div>
+            </div>
+
+            <div class="relative z-10 max-w-3xl mx-auto text-center">
+                <div class="reveal mb-10">
+                    <span class="match-badge mb-6 inline-flex">
+                        <span>⚽</span> Qatar 2022
+                    </span>
+
+                    <h2
+                        class="font-display text-5xl md:text-6xl text-amber-warm mb-4"
+                    >
+                        El Compromiso
+                    </h2>
+                    <p class="font-script text-3xl text-cream/80 mb-10">
+                        Dicen que ganamos gracias a Messi y al Dibu.
+                        Habladurías: esta es la verdad.
+                    </p>
+                </div>
+
+                <!-- Story -->
+                <div
+                    class="reveal space-y-6 font-body text-cream/80 leading-relaxed text-left bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 mb-10"
+                >
+                    <p>
+                        Era el 18 de diciembre de 2022. El mundo entero miraba
+                        el partido más importante de la historia del fútbol: la
+                        Final del Mundial de Qatar entre Argentina y Francia.
+                    </p>
+                    <p>
+                        El partido llegó al alargue de manera inesperada y
+                        absurda. Era un momento extremo. En el entretiempo de
+                        ese alargue, con el corazón en la garganta y ya sin más
+                        opciones racionales, tuvimos que darlo todo:
+                    </p>
+
+                    <!-- The quote -->
+                    <blockquote
+                        class="relative border-l-4 border-amber-warm pl-6 py-2 my-6"
+                    >
+                        <p
+                            class="font-script text-3xl text-amber-warm italic leading-relaxed"
+                        >
+                            "Amor, si ganamos… ¿nos casamos?"
+                        </p>
+                    </blockquote>
+
+                    <p>
+                        Argentina ganó y fue un momento inmensamente feliz para
+                        nosotros y para todo el país. De nada, Argentina, lo
+                        hicimos por amor.
+                    </p>
+                    <p>
+                        Y acá estamos
+                        <strong class="text-amber-warm"
+                            >cumpliendo la promesa</strong
+                        >, justo antes del próximo Mundial — que empieza en
+                        junio, por si alguien se preguntó. Y si este no te está
+                        importando tanto, no te preocupes, estamos igual — .
+                    </p>
+                </div>
+
+                <!-- Argentina champs photo -->
+                <div class="reveal rounded-2xl overflow-hidden h-64 shadow-xl">
+                    <img
+                        src="/images/argentina_qatar.jpg"
+                        alt="Argentina campeón del mundo · Qatar 2022"
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+
+                <p class="reveal mt-10 font-script text-5xl text-amber-warm">
+                    ¡Hay loocrooo...ahora nos volvimo'a ilusionar!
+                </p>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+        <footer class="bg-brown-dark/95 py-10 px-6 text-center">
+            <p class="font-script text-3xl text-amber-warm mb-2">
+                Nati & Martín
+            </p>
+            <p class="font-body text-cream/60 text-sm mb-1">
+                Sábado 23 de Mayo · 2026 · 12hs · Alta Gracia · Córdoba.
+            </p>
+            <p class="font-body text-cream/40 text-xs mt-4">
+                Sitio web hecho con amor e IA, no como el locro que se hace sólo
+                con amor y Claude sólo lo puede imaginar.
+            </p>
+        </footer>
+
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
