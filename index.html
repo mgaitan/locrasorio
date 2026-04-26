@@ -1232,6 +1232,198 @@
         </section>
 
         <!-- ══════════════════════════════════════════
+       CONFIRMANOS
+  ══════════════════════════════════════════ -->
+        <section
+            id="confirmar"
+            class="relative py-24 px-6 bg-cream overflow-hidden"
+        >
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <div
+                    class="blob blob-rust w-[280px] h-[280px] top-[-50px] right-[-40px] opacity-30"
+                ></div>
+                <div
+                    class="blob blob-amber w-[220px] h-[220px] bottom-[-30px] left-[-30px] opacity-25"
+                ></div>
+            </div>
+
+            <div class="relative z-10 max-w-xl mx-auto">
+                <div class="text-center mb-10 reveal">
+                    <h2 class="section-title">Confirmanos</h2>
+                    <p class="section-subtitle">Antes del 5 de mayo</p>
+                    <p class="font-body text-brown/70 leading-relaxed">
+                        Completá el formulario para que sepamos que contamos con
+                        vos y tu gente. Cuanto antes mejor ¡que hay que poner a
+                        remojar porotos!
+                    </p>
+                </div>
+
+                <!-- RSVP Form -->
+                <form
+                    id="rsvp-form"
+                    class="reveal rsvp-card rounded-3xl p-8 space-y-5"
+                    novalidate
+                >
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <div class="sm:col-span-2">
+                            <label class="rsvp-label" for="rsvp-nombre"
+                                >Nombre y apellido
+                                <span class="text-rust">*</span></label
+                            >
+                            <input
+                                id="rsvp-nombre"
+                                name="nombre"
+                                type="text"
+                                required
+                                autocomplete="name"
+                                class="rsvp-input"
+                                placeholder="Tu nombre completo"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="rsvp-label" for="rsvp-adultos"
+                                >Adultos <span class="text-rust">*</span></label
+                            >
+                            <input
+                                id="rsvp-adultos"
+                                name="adultos"
+                                type="number"
+                                min="1"
+                                max="20"
+                                required
+                                class="rsvp-input"
+                                placeholder="1"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="rsvp-label" for="rsvp-ninos"
+                                >Niños/as</label
+                            >
+                            <input
+                                id="rsvp-ninos"
+                                name="ninos"
+                                type="number"
+                                min="0"
+                                max="20"
+                                class="rsvp-input"
+                                placeholder="0"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="rsvp-label" for="rsvp-telefono"
+                                >Teléfono</label
+                            >
+                            <input
+                                id="rsvp-telefono"
+                                name="telefono"
+                                type="tel"
+                                autocomplete="tel"
+                                class="rsvp-input"
+                                placeholder="+54 9 11 …"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="rsvp-label" for="rsvp-email"
+                                >Email (opcional)</label
+                            >
+                            <input
+                                id="rsvp-email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                class="rsvp-input"
+                                placeholder="para avisarte novedades"
+                            />
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <label class="rsvp-label" for="rsvp-restricciones"
+                                >Restricciones/Preferencias alimentarias</label
+                            >
+                            <input
+                                id="rsvp-restricciones"
+                                name="restricciones"
+                                type="text"
+                                class="rsvp-input"
+                                placeholder="vegetariano, celiaco, alérgico a…"
+                            />
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <label class="rsvp-label" for="rsvp-mensaje"
+                                >Mensaje (opcional)</label
+                            >
+                            <textarea
+                                id="rsvp-mensaje"
+                                name="mensaje"
+                                rows="3"
+                                class="rsvp-input resize-none"
+                                placeholder="¿Algo que quieras contarnos?"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div
+                        id="rsvp-error"
+                        class="hidden text-sm text-rust font-body font-semibold text-center py-2"
+                    ></div>
+
+                    <button
+                        type="submit"
+                        id="rsvp-submit"
+                        class="btn-primary w-full text-base py-4"
+                    >
+                        Confirmar asistencia
+                    </button>
+                </form>
+
+                <!-- Success state -->
+                <div
+                    id="rsvp-success"
+                    class="hidden text-center rsvp-card rounded-3xl p-10"
+                >
+                    <p class="font-script text-5xl text-rust mb-4">
+                        ¡Los esperamos!
+                    </p>
+                    <p class="font-body text-brown/75 leading-relaxed mb-6">
+                        Gracias por confirmar. Anotamos tu reserva y nos vemos
+                        el
+                        <strong class="text-brown-dark">23 de mayo!</strong>.
+                    </p>
+                    <div
+                        class="bg-amber/15 border border-amber/30 rounded-2xl p-5 text-left mb-6"
+                    >
+                        <p
+                            class="font-body text-sm text-brown/75 leading-relaxed"
+                        >
+                            Si querés y podés hacer un aporte voluntario para el
+                            evento, podés transferir al alias
+                            <strong
+                                class="text-brown-dark font-mono tracking-wide"
+                                >martingaitan.bru</strong
+                            >
+                            . El monto sugerido es
+                            <strong class="text-rust"
+                                >$20.000 por persona</strong
+                            >, pero cualquier colaboración es bienvenida.
+                            ¡Gracias!
+                        </p>
+                    </div>
+                    <p class="font-script text-3xl text-amber-warm">
+                        Nati & Martín
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
        LA RECETA
   ══════════════════════════════════════════ -->
         <section
@@ -1753,198 +1945,6 @@
                 <p class="reveal mt-10 font-script text-5xl text-amber-warm">
                     ¡Hay loocrooo...ahora nos volvimo'a ilusionar!
                 </p>
-            </div>
-        </section>
-
-        <!-- ══════════════════════════════════════════
-       CONFIRMANOS
-  ══════════════════════════════════════════ -->
-        <section
-            id="confirmar"
-            class="relative py-24 px-6 bg-cream overflow-hidden"
-        >
-            <div
-                class="absolute inset-0 pointer-events-none"
-                aria-hidden="true"
-            >
-                <div
-                    class="blob blob-rust w-[280px] h-[280px] top-[-50px] right-[-40px] opacity-30"
-                ></div>
-                <div
-                    class="blob blob-amber w-[220px] h-[220px] bottom-[-30px] left-[-30px] opacity-25"
-                ></div>
-            </div>
-
-            <div class="relative z-10 max-w-xl mx-auto">
-                <div class="text-center mb-10 reveal">
-                    <h2 class="section-title">Confirmanos</h2>
-                    <p class="section-subtitle">Antes del 5 de mayo</p>
-                    <p class="font-body text-brown/70 leading-relaxed">
-                        Completá el formulario para que sepamos que contamos con
-                        vos y tu gente. Cuanto antes mejor ¡que hay que poner a
-                        remojar porotos!
-                    </p>
-                </div>
-
-                <!-- RSVP Form -->
-                <form
-                    id="rsvp-form"
-                    class="reveal rsvp-card rounded-3xl p-8 space-y-5"
-                    novalidate
-                >
-                    <div class="grid sm:grid-cols-2 gap-5">
-                        <div class="sm:col-span-2">
-                            <label class="rsvp-label" for="rsvp-nombre"
-                                >Nombre y apellido
-                                <span class="text-rust">*</span></label
-                            >
-                            <input
-                                id="rsvp-nombre"
-                                name="nombre"
-                                type="text"
-                                required
-                                autocomplete="name"
-                                class="rsvp-input"
-                                placeholder="Tu nombre completo"
-                            />
-                        </div>
-
-                        <div>
-                            <label class="rsvp-label" for="rsvp-adultos"
-                                >Adultos <span class="text-rust">*</span></label
-                            >
-                            <input
-                                id="rsvp-adultos"
-                                name="adultos"
-                                type="number"
-                                min="1"
-                                max="20"
-                                required
-                                class="rsvp-input"
-                                placeholder="1"
-                            />
-                        </div>
-
-                        <div>
-                            <label class="rsvp-label" for="rsvp-ninos"
-                                >Niños/as</label
-                            >
-                            <input
-                                id="rsvp-ninos"
-                                name="ninos"
-                                type="number"
-                                min="0"
-                                max="20"
-                                class="rsvp-input"
-                                placeholder="0"
-                            />
-                        </div>
-
-                        <div>
-                            <label class="rsvp-label" for="rsvp-telefono"
-                                >Teléfono</label
-                            >
-                            <input
-                                id="rsvp-telefono"
-                                name="telefono"
-                                type="tel"
-                                autocomplete="tel"
-                                class="rsvp-input"
-                                placeholder="+54 9 11 …"
-                            />
-                        </div>
-
-                        <div>
-                            <label class="rsvp-label" for="rsvp-email"
-                                >Email (opcional)</label
-                            >
-                            <input
-                                id="rsvp-email"
-                                name="email"
-                                type="email"
-                                autocomplete="email"
-                                class="rsvp-input"
-                                placeholder="para avisarte novedades"
-                            />
-                        </div>
-
-                        <div class="sm:col-span-2">
-                            <label class="rsvp-label" for="rsvp-restricciones"
-                                >Restricciones/Preferencias alimentarias</label
-                            >
-                            <input
-                                id="rsvp-restricciones"
-                                name="restricciones"
-                                type="text"
-                                class="rsvp-input"
-                                placeholder="vegetariano, celiaco, alérgico a…"
-                            />
-                        </div>
-
-                        <div class="sm:col-span-2">
-                            <label class="rsvp-label" for="rsvp-mensaje"
-                                >Mensaje (opcional)</label
-                            >
-                            <textarea
-                                id="rsvp-mensaje"
-                                name="mensaje"
-                                rows="3"
-                                class="rsvp-input resize-none"
-                                placeholder="¿Algo que quieras contarnos?"
-                            ></textarea>
-                        </div>
-                    </div>
-
-                    <div
-                        id="rsvp-error"
-                        class="hidden text-sm text-rust font-body font-semibold text-center py-2"
-                    ></div>
-
-                    <button
-                        type="submit"
-                        id="rsvp-submit"
-                        class="btn-primary w-full text-base py-4"
-                    >
-                        Confirmar asistencia
-                    </button>
-                </form>
-
-                <!-- Success state -->
-                <div
-                    id="rsvp-success"
-                    class="hidden text-center rsvp-card rounded-3xl p-10"
-                >
-                    <p class="font-script text-5xl text-rust mb-4">
-                        ¡Los esperamos!
-                    </p>
-                    <p class="font-body text-brown/75 leading-relaxed mb-6">
-                        Gracias por confirmar. Anotamos tu reserva y nos vemos
-                        el
-                        <strong class="text-brown-dark">23 de mayo!</strong>.
-                    </p>
-                    <div
-                        class="bg-amber/15 border border-amber/30 rounded-2xl p-5 text-left mb-6"
-                    >
-                        <p
-                            class="font-body text-sm text-brown/75 leading-relaxed"
-                        >
-                            Si querés y podés hacer un aporte voluntario para el
-                            evento, podés transferir al alias
-                            <strong
-                                class="text-brown-dark font-mono tracking-wide"
-                                >martingaitan.bru</strong
-                            >
-                            . El monto sugerido es
-                            <strong class="text-rust"
-                                >$20.000 por persona</strong
-                            >, pero cualquier colaboración es bienvenida.
-                            ¡Gracias!
-                        </p>
-                    </div>
-                    <p class="font-script text-3xl text-amber-warm">
-                        Nati & Martín
-                    </p>
-                </div>
             </div>
         </section>
 
