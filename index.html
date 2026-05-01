@@ -33,6 +33,11 @@
             name="twitter:image"
             content="https://locrasorio.pages.dev/images/gallery/gallery-14.jpg"
         />
+        <script>
+            if (window.location.hash) {
+                document.documentElement.classList.add("initial-hash-pending");
+            }
+        </script>
 
         <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
         <link rel="stylesheet" href="/src/style.css" />

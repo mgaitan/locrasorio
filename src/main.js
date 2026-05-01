@@ -220,6 +220,10 @@ function stopHashAlignment() {
   }
 }
 
+function revealInitialHashPage() {
+  document.documentElement.classList.remove("initial-hash-pending");
+}
+
 function keepSectionAligned(target, durationMs = 2500) {
   if (!target) return;
 
@@ -237,10 +241,16 @@ function keepSectionAligned(target, durationMs = 2500) {
 
 function alignCurrentHash(durationMs = 2500) {
   const hash = window.location.hash;
-  if (!hash || hash === "#") return;
+  if (!hash || hash === "#") {
+    revealInitialHashPage();
+    return;
+  }
 
   const target = document.getElementById(hash.slice(1));
-  if (!target) return;
+  if (!target) {
+    revealInitialHashPage();
+    return;
+  }
 
   scrollToSection(target, "auto");
   keepSectionAligned(target, durationMs);
@@ -268,6 +278,14 @@ window.addEventListener("hashchange", () => {
 
 window.addEventListener("load", () => {
   alignCurrentHash(3500);
+  window.setTimeout(revealInitialHashPage, 200);
+  window.setTimeout(revealInitialHashPage, 3800);
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (!window.location.hash) {
+    revealInitialHashPage();
+  }
 });
 
 // ── Scroll reveal ──

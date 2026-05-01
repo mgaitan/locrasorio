@@ -11,9 +11,14 @@
     font-family: 'Lato', system-ui, sans-serif;
   }
 
+  html.initial-hash-pending body {
+    opacity: 0;
+  }
+
   body {
     @apply bg-cream text-brown;
     overflow-x: hidden;
+    transition: opacity 0.2s ease;
   }
 
   section[id] {
