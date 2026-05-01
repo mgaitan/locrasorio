@@ -166,7 +166,9 @@ lightbox.addEventListener("touchend", (e) => {
 
 // Wire up all gallery images
 window.addEventListener("DOMContentLoaded", () => {
-  galleryImgs = Array.from(document.querySelectorAll(".gallery-grid img"));
+  galleryImgs = Array.from(
+    document.querySelectorAll(".gallery-grid img, .lightbox-image"),
+  );
   galleryImgs.forEach((img, i) => {
     img.style.cursor = "zoom-in";
     img.addEventListener("click", () => openLightbox(i));
