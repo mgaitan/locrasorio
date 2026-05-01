@@ -92,7 +92,7 @@
                         <a
                             href="#confirmar"
                             class="btn-primary text-sm py-2 px-5"
-                            >Confirmanos</a
+                            >Saludos</a
                         >
                     </li>
                 </ul>
@@ -139,7 +139,7 @@
                     </li>
                     <li>
                         <a href="#confirmar" class="text-rust font-bold"
-                            >Confirmanos</a
+                            >Saludos</a
                         >
                     </li>
                 </ul>
@@ -212,10 +212,22 @@
                     nuestro amor.
                 </p>
 
+                <div class="mb-6 reveal">
+                    <a href="#aporte" class="btn-contribution">
+                        ¡Hace tu aporte para
+                        <span
+                            id="contribution-target"
+                            class="contribution-target"
+                            aria-live="polite"
+                            >el ferné</span
+                        >!
+                    </a>
+                </div>
+
                 <!-- CTA -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="#confirmar" class="btn-primary"
-                        >Confirmá tu asistencia</a
+                        >¡Dejanos un saludo!</a
                     >
                     <a href="#nosotros" class="btn-outline">Nuestra historia</a>
                 </div>
@@ -906,14 +918,20 @@
                         <div
                             class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
                         >
-                            Cada uno se viste como quiere: es un locro entre
-                            gente querida, no la Met Gala pero si gustan de la
-                            elegancia nadie los discriminará. Sin embargo, el
-                            lugar es semicubierto así que dependemos un poco del
-                            clima otoñal de mayo. Recomendamos ropa cómoda y
-                            algo de abrigo no estará de más. Si el sol acompaña
-                            podemos estar afuera. Zapatillas o calzado cómodo si
-                            vas a querer bailotear.
+                            <p>
+                                Cada uno se viste como quiere: es un locro entre
+                                gente querida, no la Met Gala. Si gustan de la
+                                elegancia nadie los discriminará y si van de
+                                jogging y camiseta de la selección te pueden
+                                confundir con Martín, el novio del casamiento.
+                            </p>
+                            <p>
+                                El lugar es semicubierto así que dependemos un
+                                poco del clima otoñal de mayo. Recomendamos ropa
+                                cómoda y algo de abrigo no estará de más. Si el
+                                sol acompaña podemos estar afuera. Zapatillas o
+                                calzado cómodo si vas a querer bailotear.
+                            </p>
                         </div>
                     </details>
 
@@ -945,18 +963,9 @@
                         <div
                             class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
                         >
-                            <strong class="text-brown-dark"
-                                >No necesitamos ni esperamos ningún
-                                regalo</strong
-                            >, de verdad. Si querés y podés colaborar con los
-                            gastos del evento (<em>it's a trap!</em>), sugerimos
-                            un aporte de $20.000 por persona — pero es
-                            completamente voluntario y no un requisito; lo
-                            importante es que puedan venir. Sabemos que muchos
-                            vendrán de lejos y ya tendrán otros gastos
-                            importantes, así que no se sientan en el compromiso.
-                            <br /><br />Si insisten, el alias para tranferirnos
-                            es <strong>martingaitan.bru</strong>.
+                            No necesitamos regalo. Si querés sumar una mano con
+                            los gastos del locrasorio, más arriba vas a ver una
+                            sección especial con toda la data del aporte.
                         </div>
                     </details>
 
@@ -1084,7 +1093,7 @@
                             class="flex items-center justify-between p-6 gap-4"
                         >
                             <span class="font-display text-lg text-brown-dark"
-                                >¿Hasta cuándo podemos confirmar?</span
+                                >¿Ya está cerrado el cupo?</span
                             >
                             <span class="faq-icon text-rust flex-shrink-0">
                                 <svg
@@ -1105,11 +1114,11 @@
                         <div
                             class="px-6 pb-6 font-body text-brown/75 leading-relaxed"
                         >
-                            Idealmente antes del
-                            <strong class="text-brown-dark">5 de mayo</strong
-                            >, por favor. Necesitamos los números para calcular
-                            bebidas, cuánto locro cocinar y acordarnos de dónde
-                            te conocemos.
+                            Sí, se llenó hermoso: seremos más de 150 comensales
+                            y ya hay gente ansiosa. Cerramos la inscripción,
+                            pero el formulario sigue abierto para que nos dejen
+                            mensajitos y saludos. Y no te preocupes, hacemos
+                            varios locros por temporada cada año!
                         </div>
                     </details>
 
@@ -1232,6 +1241,79 @@
         </section>
 
         <!-- ══════════════════════════════════════════
+       APORTE
+  ══════════════════════════════════════════ -->
+        <section
+            id="aporte"
+            class="relative py-24 px-6 bg-amber/10 overflow-hidden"
+        >
+            <div
+                class="absolute inset-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <div
+                    class="blob blob-amber w-[320px] h-[320px] top-[-50px] right-[10%] opacity-25"
+                ></div>
+                <div
+                    class="blob blob-rust w-[240px] h-[240px] bottom-[-40px] left-[8%] opacity-20"
+                ></div>
+            </div>
+
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <div
+                    class="reveal contribution-card rounded-[2rem] p-8 md:p-12"
+                >
+                    <p
+                        class="font-body text-sm tracking-[0.25em] uppercase text-rust/80 mb-4"
+                    >
+                        Un pesito pa'la birra 🍻
+                    </p>
+                    <h2 class="section-title mb-5">
+                        Si querés hacer un aporte
+                    </h2>
+                    <p
+                        class="font-body text-lg text-brown/80 leading-relaxed mb-4"
+                    >
+                        Lo que más queremos es que vengan todes y que
+                        compartamos este día. Como siempre, pondremos todo lo
+                        que tenemos para ser buenos anfitriones, pero nos viene
+                        bien una pequeña ayuda. ¡Hay más de 150 invitades y sin
+                        duda nos hubiera encantado que fueran más!
+                    </p>
+                    <p
+                        class="font-body text-lg text-brown/80 leading-relaxed mb-4"
+                    >
+                        El aporte sugerido (pero no se sientan limitados 😉) es
+                        <strong class="text-rust">$20.000 por persona</strong>.
+                        Pero, de corazón, si ya tenés muchos gastos para venir o
+                        la casta libertaria te la está poniendo muy dificil, no
+                        pasa nada. ¡Los esperamos!
+                    </p>
+
+                    <div
+                        class="bg-white/70 border border-amber/30 rounded-2xl p-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between"
+                    >
+                        <div>
+                            <p
+                                class="font-body text-sm uppercase tracking-[0.22em] text-mauve/80"
+                            >
+                                Alias para transferir
+                            </p>
+                            <p
+                                class="font-mono text-xl md:text-2xl text-brown-dark tracking-wide"
+                            >
+                                martingaitan.bru
+                            </p>
+                        </div>
+                        <a href="#confirmar" class="btn-primary text-center"
+                            >¡Dejanos un saludo!</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════
        CONFIRMANOS
   ══════════════════════════════════════════ -->
         <section
@@ -1252,12 +1334,12 @@
 
             <div class="relative z-10 max-w-xl mx-auto">
                 <div class="text-center mb-10 reveal">
-                    <h2 class="section-title">Confirmanos</h2>
-                    <p class="section-subtitle">Antes del 5 de mayo</p>
+                    <h2 class="section-title">Dejanos un saludo</h2>
                     <p class="font-body text-brown/70 leading-relaxed">
-                        Completá el formulario para que sepamos que contamos con
-                        vos y tu gente. Cuanto antes mejor ¡que hay que poner a
-                        remojar porotos!
+                        Seremos más de 150 y estamos felices. Cerramos la
+                        inscripción porque no cabemos más en el lugar (y tampoco
+                        en el bolsillo), pero si querés dejarnos un mensajito
+                        lindo, este espacio sigue abierto.
                     </p>
                 </div>
 
@@ -1267,8 +1349,8 @@
                     class="reveal rsvp-card rounded-3xl p-8 space-y-5"
                     novalidate
                 >
-                    <div class="grid sm:grid-cols-2 gap-5">
-                        <div class="sm:col-span-2">
+                    <div class="grid gap-5">
+                        <div>
                             <label class="rsvp-label" for="rsvp-nombre"
                                 >Nombre y apellido
                                 <span class="text-rust">*</span></label
@@ -1281,51 +1363,6 @@
                                 autocomplete="name"
                                 class="rsvp-input"
                                 placeholder="Tu nombre completo"
-                            />
-                        </div>
-
-                        <div>
-                            <label class="rsvp-label" for="rsvp-adultos"
-                                >Adultos <span class="text-rust">*</span></label
-                            >
-                            <input
-                                id="rsvp-adultos"
-                                name="adultos"
-                                type="number"
-                                min="1"
-                                max="20"
-                                required
-                                class="rsvp-input"
-                                placeholder="1"
-                            />
-                        </div>
-
-                        <div>
-                            <label class="rsvp-label" for="rsvp-ninos"
-                                >Niños/as</label
-                            >
-                            <input
-                                id="rsvp-ninos"
-                                name="ninos"
-                                type="number"
-                                min="0"
-                                max="20"
-                                class="rsvp-input"
-                                placeholder="0"
-                            />
-                        </div>
-
-                        <div>
-                            <label class="rsvp-label" for="rsvp-telefono"
-                                >Teléfono</label
-                            >
-                            <input
-                                id="rsvp-telefono"
-                                name="telefono"
-                                type="tel"
-                                autocomplete="tel"
-                                class="rsvp-input"
-                                placeholder="+54 9 11 …"
                             />
                         </div>
 
@@ -1343,29 +1380,18 @@
                             />
                         </div>
 
-                        <div class="sm:col-span-2">
-                            <label class="rsvp-label" for="rsvp-restricciones"
-                                >Restricciones/Preferencias alimentarias</label
-                            >
-                            <input
-                                id="rsvp-restricciones"
-                                name="restricciones"
-                                type="text"
-                                class="rsvp-input"
-                                placeholder="vegetariano, celiaco, alérgico a…"
-                            />
-                        </div>
-
-                        <div class="sm:col-span-2">
+                        <div>
                             <label class="rsvp-label" for="rsvp-mensaje"
-                                >Mensaje (opcional)</label
+                                >Tu saludo
+                                <span class="text-rust">*</span></label
                             >
                             <textarea
                                 id="rsvp-mensaje"
                                 name="mensaje"
-                                rows="3"
+                                rows="5"
+                                required
                                 class="rsvp-input resize-none"
-                                placeholder="¿Algo que quieras contarnos?"
+                                placeholder="Escribinos lo que tengas ganas de compartirnos"
                             ></textarea>
                         </div>
                     </div>
@@ -1380,7 +1406,7 @@
                         id="rsvp-submit"
                         class="btn-primary w-full text-base py-4"
                     >
-                        Confirmar asistencia
+                        ¡Dejanos un saludo!
                     </button>
                 </form>
 
@@ -1389,35 +1415,13 @@
                     id="rsvp-success"
                     class="hidden text-center rsvp-card rounded-3xl p-10"
                 >
-                    <p class="font-script text-5xl text-rust mb-4">
-                        ¡Los esperamos!
-                    </p>
+                    <p class="font-script text-5xl text-rust mb-4">¡Gracias!</p>
                     <p class="font-body text-brown/75 leading-relaxed mb-6">
-                        Gracias por confirmar. Anotamos tu reserva y nos vemos
-                        el
-                        <strong class="text-brown-dark">23 de mayo!</strong>.
+                        Nos llegó tu mensaje y lo leeremos con alegría. ¡Gracias
+                        por ser parte de nuestra historia!
                     </p>
-                    <div
-                        class="bg-amber/15 border border-amber/30 rounded-2xl p-5 text-left mb-6"
-                    >
-                        <p
-                            class="font-body text-sm text-brown/75 leading-relaxed"
-                        >
-                            Si querés y podés hacer un aporte voluntario para el
-                            evento, podés transferir al alias
-                            <strong
-                                class="text-brown-dark font-mono tracking-wide"
-                                >martingaitan.bru</strong
-                            >
-                            . El monto sugerido es
-                            <strong class="text-rust"
-                                >$20.000 por persona</strong
-                            >, pero cualquier colaboración es bienvenida.
-                            ¡Gracias!
-                        </p>
-                    </div>
                     <p class="font-script text-3xl text-amber-warm">
-                        Nati & Martín
+                        Nati y Martín
                     </p>
                 </div>
             </div>
@@ -1556,7 +1560,7 @@
                             difícil hacer poco.
                         </p>
                         <p class="mt-1 font-semibold">
-                            ¡Hacé para 10 e invitanos, culiad@! 🍲
+                            ¡Hacé para 10 al menos e invitanos, culiad@! 🍲
                         </p>
                     </div>
                 </div>
@@ -1620,7 +1624,7 @@
                                 <li class="flex gap-2">
                                     <span class="text-amber-warm">·</span>
                                     <span data-per-g="40">2 kg</span> pulpa de
-                                    cerdo
+                                    cerdo / bondiola
                                 </li>
                                 <li class="flex gap-2">
                                     <span class="text-amber-warm">·</span>

@@ -3,6 +3,52 @@ const rsvpForm = document.getElementById("rsvp-form");
 const rsvpSuccess = document.getElementById("rsvp-success");
 const rsvpError = document.getElementById("rsvp-error");
 const rsvpSubmit = document.getElementById("rsvp-submit");
+const contributionTarget = document.getElementById("contribution-target");
+
+const contributionItems = [
+  "el ferné",
+  "el vermú",
+  "el vino",
+  "la birra",
+  "las empanadas",
+  "los porotos",
+  "el zapallo",
+  "los choris",
+  "los descartables",
+  "la decoración",
+  "el que pasa música",
+  "el salón",
+  "la mesa dulce",
+  "alquilar la olla",
+];
+
+let contributionIndex = 0;
+let contributionInterval = null;
+
+function updateContributionTarget(withAnimation = false) {
+  if (!contributionTarget) return;
+
+  if (withAnimation) {
+    contributionTarget.classList.remove("is-changing");
+    // Force reflow so the animation can replay every time.
+    void contributionTarget.offsetWidth;
+    contributionTarget.classList.add("is-changing");
+  }
+
+  contributionTarget.textContent = contributionItems[contributionIndex];
+}
+
+function startContributionRotation() {
+  if (!contributionTarget) return;
+
+  updateContributionTarget();
+  contributionInterval = window.setInterval(() => {
+    contributionIndex = (contributionIndex + 1) % contributionItems.length;
+    updateContributionTarget(true);
+  }, 1800);
+}
+
+startContributionRotation();
 
 rsvpForm?.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -10,8 +56,7 @@ rsvpForm?.addEventListener("submit", async (e) => {
 
   const data = Object.fromEntries(new FormData(rsvpForm));
   if (!data.nombre?.trim()) return showError("Por favor ingresá tu nombre.");
-  if (!data.adultos || Number(data.adultos) < 1)
-    return showError("Indicá cuántos adultos vienen.");
+  if (!data.mensaje?.trim()) return showError("Dejanos un saludo antes de enviar.");
 
   rsvpSubmit.disabled = true;
   rsvpSubmit.textContent = "Enviando…";
@@ -22,10 +67,6 @@ rsvpForm?.addEventListener("submit", async (e) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         nombre: data.nombre,
-        adultos: Number(data.adultos),
-        ninos: Number(data.ninos) || 0,
-        telefono: data.telefono || "",
-        restricciones: data.restricciones || "",
         mensaje: data.mensaje || "",
         email: data.email || "",
       }),
@@ -38,12 +79,12 @@ rsvpForm?.addEventListener("submit", async (e) => {
       const err = await res.json().catch(() => ({}));
       showError(err.error || "Algo salió mal. Intentá de nuevo.");
       rsvpSubmit.disabled = false;
-      rsvpSubmit.textContent = "Confirmar asistencia";
+      rsvpSubmit.textContent = "¡Dejanos un saludo!";
     }
   } catch {
     showError("Error de conexión. Verificá tu internet e intentá de nuevo.");
     rsvpSubmit.disabled = false;
-    rsvpSubmit.textContent = "Confirmar asistencia";
+    rsvpSubmit.textContent = "¡Dejanos un saludo!";
   }
 });
 
@@ -156,6 +197,36 @@ document.querySelectorAll("#mobile-menu a").forEach((link) => {
   link.addEventListener("click", () => {
     mobileMenu.classList.remove("open");
     menuBtn.setAttribute("aria-expanded", false);
+  });
+});
+
+// ── Smooth scroll with navbar offset ──
+function scrollToSection(target, behavior = "smooth") {
+  const navbarOffset = navbar?.offsetHeight || 0;
+  const top = target.offsetTop - navbarOffset - 16;
+
+  window.scrollTo({
+    top: Math.max(0, top),
+    behavior,
+  });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    const href = link.getAttribute("href");
+    if (!href || href === "#") return;
+
+    const targetId = href.slice(1);
+    const target = document.getElementById(targetId);
+    if (!target) return;
+
+    e.preventDefault();
+    window.history.pushState(null, "", href);
+    scrollToSection(target, "smooth");
+
+    // Some sections move a bit while images finish laying out, so we correct once more.
+    window.setTimeout(() => scrollToSection(target, "auto"), 250);
+    window.setTimeout(() => scrollToSection(target, "auto"), 900);
   });
 });
 

@@ -13,7 +13,7 @@ export async function onRequestPost({ request, env }) {
   const { nombre, adultos, ninos, telefono, restricciones, mensaje, email } = body
 
   if (!nombre?.trim()) return json({ error: 'Nombre requerido' }, 422)
-  if (!adultos || Number(adultos) < 1) return json({ error: 'Cantidad de adultos requerida' }, 422)
+  if (!mensaje?.trim()) return json({ error: 'Mensaje requerido' }, 422)
 
   const res = await fetch(AT_URL, {
     method: 'POST',
@@ -24,7 +24,7 @@ export async function onRequestPost({ request, env }) {
     body: JSON.stringify({
       fields: {
         'Nombre':                       nombre.trim(),
-        'Adultos':                      Number(adultos),
+        'Adultos':                      Number(adultos) || 0,
         'Niños/as':                     Number(ninos) || 0,
         'Teléfono':                     telefono?.trim() || '',
         'Restricciones alimentarias':   restricciones?.trim() || '',
