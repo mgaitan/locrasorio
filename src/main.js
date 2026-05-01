@@ -211,6 +211,41 @@ function scrollToSection(target, behavior = "smooth") {
   });
 }
 
+let hashAlignmentTimer = null;
+
+function stopHashAlignment() {
+  if (hashAlignmentTimer) {
+    window.clearInterval(hashAlignmentTimer);
+    hashAlignmentTimer = null;
+  }
+}
+
+function keepSectionAligned(target, durationMs = 2500) {
+  if (!target) return;
+
+  stopHashAlignment();
+  const startedAt = Date.now();
+
+  hashAlignmentTimer = window.setInterval(() => {
+    scrollToSection(target, "auto");
+
+    if (Date.now() - startedAt >= durationMs) {
+      stopHashAlignment();
+    }
+  }, 120);
+}
+
+function alignCurrentHash(durationMs = 2500) {
+  const hash = window.location.hash;
+  if (!hash || hash === "#") return;
+
+  const target = document.getElementById(hash.slice(1));
+  if (!target) return;
+
+  scrollToSection(target, "auto");
+  keepSectionAligned(target, durationMs);
+}
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     const href = link.getAttribute("href");
@@ -223,11 +258,16 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     e.preventDefault();
     window.history.pushState(null, "", href);
     scrollToSection(target, "smooth");
-
-    // Some sections move a bit while images finish laying out, so we correct once more.
-    window.setTimeout(() => scrollToSection(target, "auto"), 250);
-    window.setTimeout(() => scrollToSection(target, "auto"), 900);
+    keepSectionAligned(target, 2200);
   });
+});
+
+window.addEventListener("hashchange", () => {
+  alignCurrentHash(2200);
+});
+
+window.addEventListener("load", () => {
+  alignCurrentHash(3500);
 });
 
 // ── Scroll reveal ──
